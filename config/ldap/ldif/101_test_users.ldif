@@ -1,0 +1,38 @@
+dn: uid=billy,dc=example,dc=org
+uid: billy
+cn: billy
+sn: 3
+objectClass: top
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+loginShell: /bin/bash
+homeDirectory: /home/billy
+uidNumber: 14583102
+gidNumber: 14564100
+userPassword: {ssha}7HpkOdwwpKnMsgzOHy/i3ZjAY422oXRPZ/YRmA==
+mail: billy@example.org
+gecos: Billy User
+
+dn: uid=willy,dc=example,dc=org
+uid: willy
+cn: willy
+sn: 4
+objectClass: top
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+loginShell: /bin/bash
+homeDirectory: /home/willy
+uidNumber: 14583103
+gidNumber: 14564100
+userPassword: {ssha}6K0MVXjRncobCK3vpi/Ye2XWlx+gAnn8hs2I8Q==
+mail: willy@example.org
+gecos: Willy User
+
+dn: cn=dev,dc=example,dc=org
+objectClass: top
+objectClass: groupOfUniqueNames
+uniqueMember: uid=billy,dc=example,dc=org
