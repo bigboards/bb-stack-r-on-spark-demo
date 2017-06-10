@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  toy-shiny-app-on-r:
+    image: eizoflexscan/euler3
+    volumes:
+      - ./toy-shiny-app-on-r/Rprofile.site:/etc/R/Rprofile.site
+    ports:
+      - 127.0.0.1:5858:5858
