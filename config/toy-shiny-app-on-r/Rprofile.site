@@ -1,6 +1,3 @@
-options(
-    repos = c(CRAN = "https://cloud.r-project.org/"), download.file.method = "libcurl"
-)
 local({
    options(shiny.port = 5858, shiny.host = "{{ hostvars[ansible_hostname]['ansible_' + ansible_local.bb.node.nic_int].ipv4.address }}")
 })
